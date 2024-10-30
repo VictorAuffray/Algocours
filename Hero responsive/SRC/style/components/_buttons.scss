@@ -1,0 +1,14 @@
+%default-buttons{
+    display: block;
+    padding: 4px 10px;
+    font-weight: 500px;
+    text-decoration: none;
+    border-radius: 6px;
+    
+}
+
+.categoryButton{
+    @extend %default-buttons;
+    background: $pramryColor;
+    color: $white;   
+}

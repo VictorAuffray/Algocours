@@ -1,0 +1,65 @@
+header {
+  display: flex;
+}
+header .logo {
+  max-width: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+header nav {
+  background: red;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: green;
+  border: thin solid green;
+}
+
+nav {
+  background-color: green;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+}
+nav li {
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  background: white;
+  display: inline-block;
+}
+
+.hero {
+  margin: 0;
+}
+.hero__car {
+  padding: 20px;
+}
+.hero__car__meta {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.primaryColor {
+  color: blue;
+}
+a.secondaryColor {
+  color: green;
+}/*# sourceMappingURL=app.css.map */

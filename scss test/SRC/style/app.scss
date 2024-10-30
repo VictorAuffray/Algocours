@@ -1,0 +1,65 @@
+@import 'config/variable';
+@import 'config/mixin';
+@import 'config/config';
+@import 'views/header';
+
+$primaryColor:green;
+
+
+
+
+body{
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color: $primaryColor;
+    border: thin solid $primaryColor;
+}
+
+nav{
+    background-color: $primaryColor;
+    ul{
+        margin: 0;
+        display: flex;
+       
+    }
+    li{
+        margin: 0;
+       
+    }
+    a{
+        text-decoration: none;
+        background: white;
+        display: inline-block;
+    }
+}
+
+.hero{
+    margin: 0;
+    &__car{
+        padding: 20px;
+
+        &__meta{
+            display: flex;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+
+    &.primaryColor{
+        color: blue;
+    }
+    &.secondaryColor{
+        color: green;
+    }
+}

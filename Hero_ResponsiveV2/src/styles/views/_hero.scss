@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+
+    &--image {
+        border-radius: $borderRadius;
+    }
+
+    &--card {
+        position: absolute;
+        bottom: -64px;
+        left: 64px;
+        width: 598px;
+        padding: 40px;
+        background: $white;
+        border: 1px solid $lightGrey;
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+
+        @include media(md) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @include media(sm) {
+            position: static;
+            margin-top: 20px;
+            max-width: 100%;
+            transform: translateX(0);
+        }
+
+        &--metas {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 1rem;
+            color: $tertiaryColor;
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@mixin media($breakpoint) {
+    @if $breakpoint == sm {
+        @media (max-width: $smBreakpoint) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == md {
+        @media (max-width: $mdBreakpoint) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == lg {
+        @media (max-width: $xlBreakpoint) {
+            @content;
+        }
+    }
+}

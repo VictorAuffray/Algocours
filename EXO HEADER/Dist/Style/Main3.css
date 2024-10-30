@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.borderBox{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px ;
+    background: yellow;
+}
+
+.logo{
+    max-width: 100px;
+    height: auto;
+}
+
+header > .container{
+    display: flex ;
+    align-items: center;
+}
+
+.MainMenu{
+    display: flex;
+    list-style: none;
+}
+
+
+.MainMenu a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.MainMenu a:hover{
+    text-decoration: underline;
+}
+
+.closeMenuButton svg{
+    width: 30px;
+}
+
+.closeMenuButton {
+    text-align: right;
+    padding: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger{
+    display: none;
+}
+
+.overlay{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        max-width: 100%;
+    }
+    
+    .logo{
+        max-width: 80px;
+    }
+
+    header nav{
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        right: -200px;
+        width: 200px;
+        max-width: 100%;
+        background:yellow;
+        transition: all ease-in-out 0.25s;
+    }
+
+    header nav.isVisible{
+        right: 0;
+    }
+
+    .MainMenu{
+        display: block;
+    }
+
+    header > .container{
+        justify-content: space-between;
+    }
+
+    .closeMenuButton{
+        display: block;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .overlay.isVisible {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: black;
+        opacity: 0.25;
+        z-index: 9;
+    }
+}

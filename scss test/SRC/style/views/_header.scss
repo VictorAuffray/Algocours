@@ -1,0 +1,13 @@
+header{
+    display: flex;
+
+    .logo{
+        max-width: 100px;
+        @include borderRadius (20px);
+    }
+
+    nav{
+        background: red;
+        @include borderRadius;
+    }
+}

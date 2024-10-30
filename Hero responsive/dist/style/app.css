@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "Work-Sans", "sans-serif";
+  color: #97989F;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #181A2A;
+}
+
+h1 {
+  margin: 16px 0 24px 0;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 4rem;
+}
+
+.hero {
+  position: relative;
+}
+.hero--image {
+  border-radius: 12px;
+}
+.hero--card {
+  position: absolute;
+  bottom: -64px;
+  left: 64px;
+  width: 598px;
+  padding: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8EA;
+  border-radius: 12px;
+  box-shadow: 0px 12px 24px -6px rgba(24, 26, 42, 0.12);
+}
+.hero--metas {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1 rem;
+  color: #97989F;
+}
+.hero--metas > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.categroyButton {
+  display: block;
+  padding: 4px 10px;
+  font-weight: 500px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.categroyButton {
+  background: #4B6BFB;
+  color: #FFFFFF;
+}/*# sourceMappingURL=app.css.map */
